@@ -1,9 +1,5 @@
 
-/*body{
-    color: #0065FC; Bleu Foncé
-    color: #DEEBFF; Bleu Clair
-    color: #F2F2F2; Gris
-}*/
+/* CSS de la page Reservia*/
 
 /* Polices personnalisées---------------*/
 @font-face {
@@ -195,7 +191,7 @@ h1 p{
     padding-bottom: 5px;
 }
 
-#hebergements_section article{
+#hebergements_article{
     display: flex;
     flex-direction: column;
     width: 65%;
@@ -266,7 +262,7 @@ h1 p{
     top: -100px;
 }
 
-#hebergements_section article a{
+#hebergements_article a{
     color: #181818;
     text-decoration: none;
     font-weight: bolder;
@@ -356,18 +352,18 @@ aside{
 
 
 /* Part 4: Section Activités-------------*/
-#activites_section{
+#activites_article{
     width: 90%;
     margin: auto;
 }
 
-#activites_section h4{
+#activites_article h4{
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 1.5em;
 }
 
-#activites_article{
+#all_activites{
     display: flex;
     justify-content: space-between;
 }
