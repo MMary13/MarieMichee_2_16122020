@@ -212,6 +212,11 @@ h1 p{
     
 }
 
+.hebergement_link{
+    text-decoration: none;
+    color: #181818;
+}
+
 .hebergement_annonce{
     display: flex;
     flex-direction: column;
@@ -294,6 +299,11 @@ aside{
     font-size: 1.5em;
 }
 
+.sidebar_annonce_link{
+    text-decoration: none;
+    color: #181818;
+}
+
 .sidebar_annonce{
     display: flex;
     flex-direction: row;
@@ -365,6 +375,10 @@ aside{
 .colonne{
     max-width: 400px;
     margin-bottom: 35px;
+}
+.activite_link{
+    text-decoration: none;
+    color: #181818;
 }
 
 .activite_annonce{
