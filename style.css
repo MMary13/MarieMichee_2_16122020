@@ -186,7 +186,7 @@ h1 p{
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 1.5em;
-    padding-left: 10px;
+    padding-left: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -194,16 +194,17 @@ h1 p{
 #hebergements_article{
     display: flex;
     flex-direction: column;
-    width: 65%;
+    width: 70%;
     margin-right: 10px;
     padding: 15px;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
 
-.row_article{
+#all_hebergements{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 25px;
     
 }
@@ -218,7 +219,7 @@ h1 p{
     flex-direction: column;
     justify-content: flex-start;
     width: 200px;
-    margin-left: 5px;
+    margin-bottom: 25px;
     border-radius: 10px;
     background-color: white;
     padding: 5px;
@@ -242,22 +243,19 @@ h1 p{
     font-size: 1em;
 }
 
+#image_row1_1,#image_row1_2, #image_row1_3, #image_row2_1, #image_row2_2, #image_row2_3{
+    width: 200px;
+}
 
 #image_row1_1,#image_row1_2, #image_row1_3{
-    width: 200px;
     position: relative;
     top: -10px;
 }
 #image_row2_1{
-    width: 200px;
     position: relative;
     top: -40px;
 }
-#image_row2_2{
-    width: 200px;
-}
 #image_row2_3{
-    width: 200px;
     position: relative;
     top: -100px;
 }
@@ -266,7 +264,7 @@ h1 p{
     color: #181818;
     text-decoration: none;
     font-weight: bolder;
-    padding-left: 15px;
+    padding-left: 5px;
 }
 
 .blue_star{
@@ -277,7 +275,7 @@ h1 p{
 }
 
 aside{
-    width: 35%;
+    width: 30%;
     margin-left: 10px;
     padding: 25px;
     background-color: #F2F2F2;
@@ -480,3 +478,47 @@ footer div a{
     font-family: 'Raleway_bold';
 }
 /*---------------------------------------*/
+
+
+/* Spécification pour les écrans type tablette */
+@media (min-width:768px) and (max-width: 991px){
+
+    #hebergements_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        margin: auto;
+    }
+
+    #hebergements_article{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;
+        padding: 15px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    aside{
+        width: 50%;
+        margin-left: 10px;
+        padding: 25px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+}
+/*---------------------------------------*/
+
+
+/* Spécification pour les petits écrans (smartphones) */
+@media (max-width: 768px){
+
+}
+
+/*---------------------------------------*/
+
+
