@@ -73,6 +73,7 @@ nav a:hover{
 #main_title{
     line-height: 10px;
     text-align: left;
+    margin-bottom: 25px;
 }
 
 h1{
@@ -86,13 +87,17 @@ h1 p{
 }
 
 /* Search section*/
- #icon_mapmarker{
+#search_section{
+    margin-bottom: 30px;
+}
+
+#icon_mapmarker{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F2F2F2;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
     height: 40px;
     width: 40px;
 }
@@ -101,8 +106,8 @@ h1 p{
     font-family: 'Raleway_bold';
     background-color: #0065FC;
     border-color: #0065FC;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     color: #FFFFFF;
     padding: 5px;
     padding-left: 10px;
@@ -114,7 +119,6 @@ h1 p{
 #input_search{
     padding-left: 8px;
     font-weight: bolder;
-    font-family: 'Raleway-_bold';
 }
 
 #search_bar{
@@ -123,19 +127,28 @@ h1 p{
     height: 40px;
     width: fit-content;
     border: 2px #F2F2F2 solid;
-    border-radius: 20px;
+    border-radius: 15px;
+    border-left: none;
+    margin-bottom: 15px;
 }
 
 
 #filtres{
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
     width: 70%;
 }
 
+#liste_filtres{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 #filtres p{
     font-family: 'Raleway_bold';
+    font-weight: bolder;
+    margin-right: 15px;
 }
 
 .filtre_button{
@@ -143,10 +156,12 @@ h1 p{
     align-items: center;
     font-weight: bolder;
     width: fit-content;
-    height: 30px;
+    height: 35px;
     padding-right: 5px;
     border: 2px #F2F2F2 solid;
     border-radius: 20px;
+    margin-right: 10px;
+    border-left: none;
 }
 
 .filtre_logo{
@@ -157,22 +172,19 @@ h1 p{
     background-color: #DEEBFF;
     margin-right: 7px;
     padding: 3px;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
     border-radius: 75px;
 }
 .filtre_text{
+    font-family: 'Raleway_bold';
     font-weight: bolder;
     text-align: justify;
     padding-right: 7px;
     padding-left: 3px;
 }
 
-#filtres input{
-    visibility: hidden;
-}
-
-#filtres label:hover{
+.filtre_button:hover{
     background-color:  #0065FC;
     color: #F2F2F2;
 }
@@ -189,6 +201,7 @@ h1 p{
     border: 3px #F2F2F2 solid;
 
 }
+
 /*---------------------------------------*/
 
 
@@ -253,36 +266,37 @@ h1 p{
 }
 
 .text_annonce{
-    /*display: flex;
-    flex-direction: column;
-    justify-content: flex-start;*/
-    text-align: justify;
-    padding-left: 5px;
+    text-align: left;
+    padding-left: 10px;
     padding-top: 10px;
+    font-size: 1em;
+}
+.text_annonce strong{
+    font-weight: bolder;
+    font-family: 'Raleway_bold';
     font-size: 1em;
 }
 
 #image_row1_1,#image_row1_2, #image_row1_3, #image_row2_1, #image_row2_2, #image_row2_3{
+    position: relative;
     width: 200px;
 }
 
 #image_row1_1,#image_row1_2, #image_row1_3{
-    position: relative;
     top: -10px;
 }
 #image_row2_1{
-    position: relative;
     top: -40px;
 }
 #image_row2_3{
-    position: relative;
     top: -100px;
 }
 
-#hebergements_article a{
+#link_more{
     color: #181818;
     text-decoration: none;
     font-weight: bolder;
+    font-family: 'Raleway_bold';
     padding-left: 5px;
 }
 
@@ -332,6 +346,11 @@ aside{
     display: flex;
     flex-direction: column;
     padding-left: 5px;
+}
+
+.sidebar_text_annonce strong{
+    font-family: 'Raleway_bold';
+    font-weight: bolder;
 }
 
 .sidebar_annonce p{
@@ -414,6 +433,7 @@ aside{
     text-align: justify;
     height: 20px;
     font-weight: bolder;
+    font-family: 'Raleway_bold';
 }
 
 .image_container{
@@ -437,32 +457,29 @@ aside{
     max-height: 125px;
 }
 
+#activite_image1, #activite_image2, #activite_image3, #activite_image4, #activite_image5, #activite_image6{
+    position: relative;
+} 
 #activite_image1{
     height: 350px;
-    position: relative;
     left: -155px;
 }
 #activite_image2{
     width: 250px;
-    position: relative;
     top: -90px;
 }
 #activite_image3{
     width: 250px;
-    position: relative;
 }
 #activite_image4{
     height: 350px;
-    position: relative;
     left: -150px;
 }
 #activite_image5{
     width: 250px;
-    position: relative;
 }
 #activite_image6{
     width: 250px;
-    position: relative;
     bottom: 15px;  
 }
 
@@ -476,7 +493,7 @@ footer{
     justify-content: space-around;
     align-items: flex-start;
     width: 95%;
-    height: 175px;
+    height: fit-content;
     margin: auto;
     background-color: #F2F2F2;
 }
@@ -495,11 +512,14 @@ footer div a{
 
 .footer_row1{
     font-family: 'Raleway_bold';
+    font-weight: bolder;
 }
 /*---------------------------------------*/
 
 
-/* Spécification pour les écrans type tablette */
+
+
+/* Spécification pour les écrans type tablette -------------------------------------*/
 @media (min-width:768px) and (max-width: 991px){
 
     /* Section Recherche */
@@ -587,12 +607,232 @@ footer div a{
     }
 
 }
-/*---------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
 
 
-/* Spécification pour les petits écrans (smartphones) */
+
+
+/* Spécification pour les petits écrans (smartphones) --------------------------------------*/
 @media (max-width: 768px){
 
+    /* En-tête */
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 90%;
+        margin: auto;
+    }
+    
+    /* Menu */
+    nav ul{
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    
+    nav a{
+        font-size: 1.2em;
+        color: #181818;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-decoration: none;
+        border-bottom: 3px solid #F2F2F2;
+    }
+    
+    #nav_inscrire{
+        color: #0065FC;
+        font-weight: bolder;
+    
+    }
+    
+    nav a:hover{
+        color:#0065FC;
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+    }
+
+    /* Section Recherche */
+    h1{
+        line-height: 25px;
+    }
+
+    #filtres{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: flex-start;
+        width: 70%;
+    }
+
+    #liste_filtres{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .filtre_button{
+        margin-bottom: 10px;
+    }
+
+    /* Section Hebergements */
+    #hebergements_section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    aside{
+        width: 100%;
+        border-radius: 0px;
+        margin: auto;
+        margin-bottom: 25px;
+        padding: 25px;
+    }
+
+    #hebergements_article{
+        width: 100%;
+        margin: auto;
+        justify-items: center;
+        background-color: white;
+        border-radius: 0px;
+    }
+
+    #hebergements_section h2{
+        padding-left: 0px;
+    }
+    
+    #all_hebergements{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        
+    }
+    
+    .hebergement_annonce{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 400px;
+        margin-bottom: 25px;
+        border-radius: 15px;
+        box-shadow: 6px 6px 4px #F2F2F2;
+        background-color: white;
+        padding: 5px;
+    }
+    
+    .hebergement_image {
+        max-width: 400px;
+        max-height: 150px;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    #image_row1_1,#image_row1_2, #image_row1_3, #image_row2_1, #image_row2_2, #image_row2_3{
+        position: relative;
+        width: 410px;
+    }
+    
+    #image_row1_1,#image_row1_2, #image_row1_3{
+        top: -60px;
+        left: -10px;
+    }
+    #image_row2_1{
+        top: -120px;
+    }
+    #image_row2_2{
+        top: -40px;
+    }
+    #image_row2_3{
+        top: -230px;
+    }
+
+    /* Section Activité */
+    #all_activites{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .colonne{
+        max-width: 400px;
+        margin-bottom: 35px;
+    }
+    .activite_link{
+        text-decoration: none;
+        color: #181818;
+    }
+    
+    .activite_annonce{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        box-shadow: 6px 6px 6px #F2F2F2;
+        background-color: white;
+    }
+
+    .image_container{
+        max-width: 400px;
+        max-height: 150px;
+        overflow: hidden;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+    #image_container1, #image_container2, #image_container3, #image_container4, #image_container5, #image_container6{
+        max-height: 150px;
+    }
+
+    #activite_image1, #activite_image2, #activite_image3, #activite_image4, #activite_image5, #activite_image6{
+        position: relative;
+    } 
+
+    #activite_image1{
+        height: 300px;
+        left: 0px;
+        top: -40px;
+    }
+    #activite_image2{
+        width: 400px;
+        top: -200px;
+    }
+    #activite_image3{
+        width: 400px;
+        top: -30px;
+    }
+    #activite_image4{
+        height: 300px;
+        left: -30px;
+        bottom: 55px;
+    }
+    #activite_image5{
+        width: 400px;
+        top: -20px;
+    }
+    #activite_image6{
+        width: 400px;
+        top: -50px; 
+    }
+
+    /* Footer */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 25px;
+        padding-top: 30px;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        line-height: 25px;
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
 }
 
 /*---------------------------------------*/
