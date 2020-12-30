@@ -111,6 +111,12 @@ h1 p{
     height: 40px;
 }
 
+#input_search{
+    padding-left: 8px;
+    font-weight: bolder;
+    font-family: 'Raleway-_bold';
+}
+
 #search_bar{
     display: flex;
     border-collapse: collapse;
@@ -169,6 +175,19 @@ h1 p{
 #filtres label:hover{
     background-color:  #0065FC;
     color: #F2F2F2;
+}
+
+#icon_info{
+    color: #0065FC;
+    margin-right: 7px;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+    width: 25px;
+    border-radius: 75px;
+    border: 3px #F2F2F2 solid;
+
 }
 /*---------------------------------------*/
 
@@ -329,21 +348,21 @@ aside{
     border-bottom-left-radius: 10px;
 }
 
+#sidebar_image1, #sidebar_image2, #sidebar_image3{
+    position: relative;
+}
+
 #sidebar_image1{
     height: 120px;
-    position: relative;
     left: -25px;
 }
 #sidebar_image2{
     height: 120px;
-    position: relative;
     left: -15px;
 }
 #sidebar_image3{
     width: 120px;
-    position: relative;
     top: -30px;
-
 }
 /*---------------------------------------*/
 
@@ -483,6 +502,12 @@ footer div a{
 /* Spécification pour les écrans type tablette */
 @media (min-width:768px) and (max-width: 991px){
 
+    /* Section Recherche */
+    #filtres{
+        width: 100%;
+    }
+
+    /* Section hébergements */
     #hebergements_section{
         display: flex;
         flex-direction: column;
@@ -498,18 +523,69 @@ footer div a{
         justify-content: space-between;
         width: 100%;
         margin-bottom: 25px;
+        margin-right: 0px;
         padding: 15px;
         background-color: #F2F2F2;
         border-radius: 20px;
     }
 
+    /* Sidebar */
     aside{
-        width: 50%;
-        margin-left: 10px;
+        width: 98%;
         padding: 25px;
         background-color: #F2F2F2;
         border-radius: 20px;
+        margin-bottom: 25px;
+        margin-left: 0px;
     }
+  
+
+    #aside_body{
+        display: flex;
+       justify-content: center;
+       padding-left: 30px;
+    }
+
+    .sidebar_annonce{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 45px;
+        border-radius: 10px;
+        height: 220px;
+        width: 180px;
+    }
+    .sidebar_image {
+        max-width: 180px;
+        max-height: 160px;
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    #sidebar_image1{
+        height: 160px;
+        top: -25px;
+    }
+    #sidebar_image2{
+        height: 160px;
+        left: -15px;
+    }
+    #sidebar_image3{
+        width: 180px;
+        top: -85px;
+    }
+
+    /* Section Activités */
+    #activites_article{
+        width: 85%;
+    }
+    #all_activites{
+        flex-wrap: wrap;
+        width: 75%;
+        margin: auto;
+    }
+
 }
 /*---------------------------------------*/
 
