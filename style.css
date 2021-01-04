@@ -90,6 +90,30 @@ h1 p{
 #search_section{
     margin-bottom: 30px;
 }
+#search_bar{
+    display: flex;
+    align-items: baseline;
+    border-collapse: collapse;
+}
+#input_part{
+    display: flex;
+    justify-content: flex-start;
+    border-collapse: collapse;
+    height: 40px;
+    width: fit-content;
+    border: 2px #F2F2F2 solid;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 15px;
+}
+#button_part{
+    display: flex;
+    position: relative;
+    top: -2px;
+    left: -5px;
+}
 
 #icon_mapmarker{
     display: flex;
@@ -113,23 +137,15 @@ h1 p{
     padding-left: 10px;
     padding-right: 10px;
     margin: 0px;
-    height: 40px;
+    height: 43px;
+}
+#loop_button{
+    visibility: hidden;
 }
 
 #input_search{
     padding-left: 8px;
     font-weight: bolder;
-}
-
-#search_bar{
-    display: flex;
-    border-collapse: collapse;
-    height: 40px;
-    width: fit-content;
-    border: 2px #F2F2F2 solid;
-    border-radius: 15px;
-    border-left: none;
-    margin-bottom: 15px;
 }
 
 
@@ -656,6 +672,31 @@ footer div a{
     /* Section Recherche */
     h1{
         line-height: 25px;
+    }
+
+    #button_part{
+        display: flex;
+        flex-direction: row-reverse;
+        position: relative;
+        top: -3px;
+        left: -5px;
+    }
+    #search_button{
+        visibility: hidden;
+    }
+    #loop_button{
+        visibility: visible;
+        font-family: 'Raleway_bold';
+        background-color: #0065FC;
+        border-color: #0065FC;
+        border-radius: 15px;
+        color: #FFFFFF;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0px;
+        height: 45px;
+        width: 45px;
     }
 
     #filtres{
