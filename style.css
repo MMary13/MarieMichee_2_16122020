@@ -737,24 +737,14 @@ footer div a{
         justify-items: center;
     }
 
-    aside{
-        width: 100%;
-        border-radius: 0px;
-        margin: auto;
-        margin-bottom: 25px;
-        padding: 25px;
-    }
-
     #hebergements_article{
         width: 100%;
         margin: auto;
         justify-items: center;
         background-color: white;
         border-radius: 0px;
-    }
-
-    #hebergements_section h2{
-        padding-left: 0px;
+        display: flex;
+        margin-right: 0px;
     }
     
     #all_hebergements{
@@ -768,7 +758,7 @@ footer div a{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 400px;
+        width: 345px;
         margin-bottom: 25px;
         border-radius: 15px;
         box-shadow: 6px 6px 4px #F2F2F2;
@@ -778,7 +768,7 @@ footer div a{
     }
     
     .hebergement_image {
-        width: 400px;
+        width: 100%;
         height: 150px;
         overflow: hidden;
         border-top-left-radius: 15px;
@@ -798,7 +788,25 @@ footer div a{
         top: -230px;
     }
 
+    /* Colonne latérale */
+    aside{
+        width: 100%;
+        border-radius: 0px;
+        margin-bottom: 25px;
+        padding: 20px;
+        margin-left: 0px;
+    }
+    .sidebar_annonce{
+        width: 345px;
+    }
+
+
     /* Section Activité */
+    #activites_article{
+        width: 100%;
+        margin-left: 50px;
+    }
+
     #all_activites{
         display: flex;
         flex-direction: column;
@@ -806,31 +814,32 @@ footer div a{
     }
     
     .colonne{
-        max-width: 400px;
-        margin-bottom: 35px;
+        max-width: 345px;
+        margin-bottom: 0px;
     }
     .activite_link{
         text-decoration: none;
         color: #181818;
     }
-    
-    .activite_annonce{
+
+    .activite_annonce, #activite_annonce2, #activite_annonce5{
         display: flex;
         flex-direction: column;
         border-radius: 15px;
         box-shadow: 6px 6px 6px #F2F2F2;
         background-color: white;
+        margin-bottom: 25px;
     }
+    
 
     .image_container{
-        width: 400px;
-        height: 150px;
+        width: 100%;
         overflow: hidden;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
     #image_container1, #image_container2, #image_container3, #image_container4, #image_container5, #image_container6{
-        height: 150px;
+        height: 130px;
     }
 
     #activite_image1, #activite_image2, #activite_image3, #activite_image4, #activite_image5, #activite_image6{
@@ -846,8 +855,8 @@ footer div a{
     #activite_image2{
         top: -200px;
     }
-    #activite_image3{
-        top: -30px;
+    #activite_image6{
+        bottom: -50px;  
     }
     #activite_image4{
         left: 0px;
@@ -860,6 +869,7 @@ footer div a{
         top: -50px; 
     }
 
+
     /* Footer */
     footer{
         display: flex;
@@ -867,7 +877,7 @@ footer div a{
         justify-content: space-between;
         width: 100%;
         padding-left: 25px;
-        padding-top: 30px;
+        padding-top: 45px;
     }
     footer div{
         display: flex;
