@@ -11,17 +11,17 @@
         <div id="bloc_page">
         <!-- Part 1: En-tête -->
           <header>
-            <img src="images/Reservia.svg" alt="Logo Reservia">
-
             <!--Navigation menu-->
             <nav>
-              <ul>
-                <li><a href="#hebergements"> Hébergements</a></li>
-                <li><a href="#activites"> Activités</a></li>
-                <li><a href="#" id="nav_inscrire"> S'inscrire</a></li>
-              </ul>
+              <img src="images/Reservia.svg" alt="Logo Reservia">
+              <div id="main_menu">
+                <p><a href="#hebergements">Hébergements</a></p>
+                <p><a href="#activites">Activités</a></p>
+              </div>
+              <p><a href="#" id="nav_inscrire"> S'inscrire</a></p>
             </nav>
           </header>
+
 
           <!-- Part 2: Section Recherche -->
           <section id="search_section">
@@ -37,8 +37,8 @@
                   <input type="search" name="input_search" id="input_search" value="Marseille,France" style="border:0px">
                 </div>
                 <div id="button_part">
-                  <input type="button" value="Rechercher" id="search_button">
-                  <button id="loop_button"><span id="loop_icon"><i class="fas fa-search"></i></span></button>
+                  <input type="button" value="Rechercher" id="desktop_search_button">
+                  <button id="smallscreen_search_button"><span id="loop_icon"><i class="fas fa-search"></i></span></button>
                 </div>
               </div>
 
@@ -71,15 +71,16 @@
             <p id="text_info"><span id="icon_info"><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
           </section>
 
-          <!-- Part 3: Section Hébergements -->
-          <div id="hebergements_section">
 
-            <article id="hebergements_article">
+          <!-- Part 3: Section Hébergements and Sidebar-->
+          <div id="main_section">
+            <!-- Section Hébergements -->
+            <section id="hebergements_section">
               <h2>Hébergements à Marseille</h2>
               <div id="all_hebergements">
                 <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row1_1" src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
                   </div>
                   <div class="text_annonce">
@@ -99,7 +100,7 @@
 
                 <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row1_2" src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
                   </div>
                   <div class="text_annonce">
@@ -119,7 +120,7 @@
 
                 <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row1_3" src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"/>
                   </div>
                   <div class="text_annonce">
@@ -139,7 +140,7 @@
 
                 <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row2_1" src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
                   </div>
                   <div class="text_annonce">
@@ -159,7 +160,7 @@
 
                 <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row2_2" src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier"/>
                   </div>
                   <div class="text_annonce">
@@ -179,7 +180,7 @@
 
                 <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row2_3" src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
                   </div>
                   <div class="text_annonce">
@@ -198,7 +199,7 @@
                 </a>
             </div>
               <div id="link_more"><a href="#" > Afficher plus</a></div>
-            </article>
+          </section>
 
             <!-- Sidebar: Les plus populaires-->
             <aside>
@@ -209,7 +210,7 @@
               <div id="aside_body">
                 <a href="#" class="sidebar_annonce_link">
                 <div class="sidebar_annonce">
-                  <div class="sidebar_image">
+                  <div class="sidebar_image_container">
                     <img id="sidebar_image1" src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                   </div>
                   <div class="sidebar_text_annonce">
@@ -229,7 +230,7 @@
 
                 <a href="#" class="sidebar_annonce_link">
                 <div class="sidebar_annonce">
-                  <div class="sidebar_image">
+                  <div class="sidebar_image_container">
                     <img id="sidebar_image2" src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
                   </div>
                   <div class="sidebar_text_annonce">
@@ -249,7 +250,7 @@
 
                 <a href="#" class="sidebar_annonce_link">
                 <div class="sidebar_annonce">
-                  <div class="sidebar_image">
+                  <div class="sidebar_image_container">
                     <img id="sidebar_image3" src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"/>
                   </div>
                   <div class="sidebar_text_annonce">
@@ -270,8 +271,9 @@
           </aside>
         </div>
 
+
           <!-- Part 4: Section Activités -->
-          <article id="activites_article">
+          <section id="activites_section">
             <h4>Activités à Marseille</h4>
 
             <div id="all_activites">
@@ -341,25 +343,26 @@
                 </a>
               </div>
             </div>
-          </article>
+          </section>
 
+          
           <!-- Part 5: Pied de page-->
           <footer>
             <div>
-              <a href="#" class="footer_row1"><strong>A propos</strong></a><br>
+              <a href="#"><strong>A propos</strong></a><br>
               <a href="#">Fonctionnement du site</a>
               <a href="#">Conditions générales de vente</a>
               <a href="#">Données et confidentialité</a>
             </div>
 
             <div>
-              <a href="#" class="footer_row1"><strong>Nos hébergements</strong></a><br>
+              <a href="#"><strong>Nos hébergements</strong></a><br>
               <a href="#">Charte qualité</a>
               <a href="#">Soumettre votre hôtel</a>
             </div>
 
             <div>
-              <a href="#" class="footer_row1"><strong>Assistance</strong></a><br>
+              <a href="#"><strong>Assistance</strong></a><br>
               <a href="#">Centre d'aide</a>
               <a href="#">Nous contacter</a>
             </div>

@@ -15,7 +15,7 @@
 
 
 /* Mise en page générale-----------------*/
-#bloc_page{
+#bloc_page {
     font-family: Raleway_regular, sans-serif;
     width: 100%;
     margin: auto;
@@ -25,38 +25,47 @@
 
 
 /* Part 1 : En-tête----------------------*/
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
     width: 93%;
     margin: auto;
 }
 
 /* Menu */
-nav ul{
-    list-style-type: none;
+nav {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 }
 
-nav li{
+nav img {
+    position: absolute;
+    left: 45px;
+}
+
+#main_menu {
+    display: flex;
+
+}
+
+#main_menu p {
     margin: 30px;
 }
 
-nav a{
+nav a {
     font-size: 20px; 
     color: #181818;
-    padding-top: 45px;
+    padding-top: 30px;
     text-decoration: none;
 }
 
-#nav_inscrire{
+#nav_inscrire {
     color: #0065FC;
     font-weight: bolder;
-
+    margin-left: 30px;
 }
 
-nav a:hover{
+nav a:hover {
     color:#0065FC;
     border-top: 3px solid #0065FC;
 }
@@ -65,37 +74,37 @@ nav a:hover{
 
 
 /* Part 2 :  Section de Recherche--------*/
-#search_section{
-    width: 93%;
-    margin: auto;
-}
 /* Titre */
-#main_title{
+#main_title {
     line-height: 15px;
     text-align: left;
     margin-bottom: 20px;
 }
 
-h1{
+h1 {
     font-size: 21px;
     font-weight: bolder;
     font-family: 'Raleway_bold';
 }
 
-h1 p{
+h1 p {
     font-size: 14px;
 }
 
 /* Search section*/
-#search_section{
+#search_section {
+    width: 93%;
+    margin: auto;
     margin-bottom: 30px;
 }
-#search_bar{
+
+#search_bar {
     display: flex;
     align-items: baseline;
     border-collapse: collapse;
 }
-#input_part{
+
+#input_part {
     display: flex;
     justify-content: flex-start;
     border-collapse: collapse;
@@ -108,14 +117,15 @@ h1 p{
     border-right: none;
     margin-bottom: 15px;
 }
-#button_part{
+
+#button_part {
     display: flex;
     position: relative;
     top: -1px;
     left: -6px;
 }
 
-#icon_mapmarker{
+#icon_mapmarker {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +136,7 @@ h1 p{
     width: 50px;
 }
 
-#search_button{
+#desktop_search_button {
     font-family: 'Raleway_bold';
     font-size: 14px;
     background-color: #0065FC;
@@ -140,36 +150,36 @@ h1 p{
     margin: 0px;
     height: 52px;
 }
-#loop_button{
+#smallscreen_search_button {
     visibility: hidden;
 }
 
-#input_search{
+#input_search {
     padding-left: 10px;
     font-weight: bolder;
 }
 
 
-#filtres{
+#filtres {
     display: flex;
     align-items: baseline;
     width: 70%;
 }
 
-#liste_filtres{
+#liste_filtres {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
 
-#filtres p{
+#filtres p {
     font-family: 'Raleway_bold';
     font-size: 17px;
     font-weight: bolder;
     margin-right: 25px;
 }
 
-.filtre_button{
+.filtre_button {
     display: flex;
     align-items: center;
     font-weight: bolder;
@@ -182,7 +192,7 @@ h1 p{
     border-left: none;
 }
 
-.filtre_logo{
+.filtre_logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,7 +204,7 @@ h1 p{
     width: 40px;
     border-radius: 75px;
 }
-.filtre_text{
+.filtre_text {
     font-family: 'Raleway_bold';
     font-size: 15px;
     font-weight: bolder;
@@ -203,12 +213,12 @@ h1 p{
     padding-left: 3px;
 }
 
-.filtre_button:hover{
+.filtre_button:hover {
     background-color:  #0065FC;
     color: #F2F2F2;
 }
 
-#icon_info{
+#icon_info {
     color: #0065FC;
     margin-right: 7px;
     padding: 6px;
@@ -220,8 +230,8 @@ h1 p{
     border: 3px #F2F2F2 solid;
 
 }
-#text_info{
-    font-size: 13px;
+#text_info {
+    font-size: 14px;
 }
 
 /*---------------------------------------*/
@@ -229,33 +239,33 @@ h1 p{
 
 
 /* Part 3: Section Hébergements----------*/
-#hebergements_section{
+#main_section {
     display: flex;
     justify-content: space-between;
     width: 93%;
     margin: auto;
 }
 
-#hebergements_section h2{
+#hebergements_section {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 15px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+#hebergements_section h2 {
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 21px;
-    padding-left: 5px;
+    padding-left: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#hebergements_article{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin-right: 20px;
-    padding: 15px;
-    background-color: #F2F2F2;
-    border-radius: 20px;
-}
-
-#all_hebergements{
+#all_hebergements {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -265,12 +275,12 @@ h1 p{
     
 }
 
-.hebergement_link{
+.hebergement_link {
     text-decoration: none;
     color: #181818;
 }
 
-.hebergement_annonce{
+.hebergement_annonce {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -283,61 +293,61 @@ h1 p{
     padding: 5px;
 }
 
-.hebergement_image {
-    width: 210px;
+.hebergement_image_container {
+    width: 100%;
     height: 115px;
     overflow: hidden;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#image_row1_1,#image_row1_2, #image_row1_3, #image_row2_1, #image_row2_2, #image_row2_3{
+#image_row1_1,#image_row1_2, #image_row1_3, #image_row2_1, #image_row2_2, #image_row2_3 {
     position: relative;
     width: 100%;
     height: auto;
 }
 
-#image_row1_1,#image_row1_2, #image_row1_3{
+#image_row1_1,#image_row1_2, #image_row1_3 {
     top: -10px;
  }
 
-#image_row2_1{
+#image_row2_1 {
     top: -40px;
 }
-#image_row2_3{
+#image_row2_3 {
     top: -100px;
 }
 
-.text_annonce{
+.text_annonce {
     text-align: left;
     padding-left: 10px;
     padding-top: 10px;
     font-size: 16px
 }
-.text_annonce strong{
+.text_annonce strong {
     font-weight: bolder;
     font-family: 'Raleway_bold';
 }
 
-#link_more a{
+#link_more a {
     color: #181818;
     text-decoration: none;
     font-weight: bolder;
     font-family: 'Raleway_bold';
 }
-#link_more{
+#link_more {
     margin-bottom: 40px;
     margin-left: 15px;
 }
 
-.blue_star{
+.blue_star {
     color: #0065FC;
 }
-.grey_star{
+.grey_star {
     color: #F2F2F2;
 }
 
-aside{
+aside {
     width: 30%;
     margin-left: 10px;
     padding: 30px;
@@ -345,23 +355,24 @@ aside{
     border-radius: 20px;
 }
 
-#aside_header{
+#aside_header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-#aside_header h3{
+
+#aside_header h3 {
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 21px;
 }
 
-.sidebar_annonce_link{
+.sidebar_annonce_link {
     text-decoration: none;
     color: #181818;
 }
 
-.sidebar_annonce{
+.sidebar_annonce {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -372,24 +383,20 @@ aside{
     padding: 5px;
 }
 
-.sidebar_text_annonce{
+.sidebar_text_annonce {
     display: flex;
     flex-direction: column;
-    padding-left: 5px;
+    text-align: justify;
+    font-size: 15px;
+    padding-left: 10px;
 }
 
-.sidebar_text_annonce strong{
+.sidebar_text_annonce strong {
     font-family: 'Raleway_bold';
     font-weight: bolder;
 }
 
-.sidebar_annonce p{
-    text-align: justify;
-    font-size: 15px;
-    padding-left: 5px;
-}
-
-.sidebar_image {
+.sidebar_image_container {
     width: 130px;
     height: 130px;
     overflow: hidden;
@@ -397,14 +404,14 @@ aside{
     border-bottom-left-radius: 10px;
 }
 
-#sidebar_image1, #sidebar_image2{
+#sidebar_image1, #sidebar_image2 {
     position: relative;
     height: 100%;
     width: auto;  
     left: -15px;
 }
 
-#sidebar_image3{
+#sidebar_image3 {
     position: relative;
     width: 100%;
     height: auto;
@@ -416,29 +423,29 @@ aside{
 
 
 /* Part 4: Section Activités-------------*/
-#activites_article{
+#activites_section {
     width: 93%;
     margin: auto;
     margin-bottom: 30px;
 }
 
-#activites_article h4{
+#activites_section h4 {
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 21px;
 }
 
-#all_activites{
+#all_activites {
     display: flex;
     justify-content: space-between;
 }
 
-.activite_link{
+.activite_link {
     text-decoration: none;
     color: #181818;
 }
 
-.activite_annonce{
+.activite_annonce {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
@@ -446,11 +453,11 @@ aside{
     background-color: white;
 
 }
-#activite_annonce2, #activite_annonce5{
+#activite_annonce2, #activite_annonce5 {
     margin-bottom: 40px;
 }
 
-.activite_annonce p{
+.activite_annonce p {
     padding-left: 5px;
     text-align: justify;
     height: 20px;
@@ -459,46 +466,46 @@ aside{
     font-size: 15px;
 }
 
-.image_container{
+.image_container {
     width: 280px;
     overflow: hidden;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-#image_container1, #image_container4{
+#image_container1, #image_container4 {
     height: 390px;
 }
-#image_container2{
+#image_container2 {
    height: 180px;
 }
-#image_container3{
+#image_container3 {
     height: 115px;
 }
-#image_container5{
+#image_container5 {
     height: 140px;
 }
-#image_container6{
+#image_container6 {
     height: 155px;
 }
 
-#activite_image1, #activite_image4{
+#activite_image1, #activite_image4 {
     position: relative;
     height: 100%;
     width: auto;
     left: -150px;
 }
 
-#activite_image2, #activite_image3, #activite_image5, #activite_image6{
+#activite_image2, #activite_image3, #activite_image5, #activite_image6 {
     position: relative;
     width: 100%;
     height: auto;
 } 
 
-#activite_image2{
+#activite_image2 {
     top: -90px;
 }
-#activite_image6{
+#activite_image6 {
     bottom: 15px;  
 }
 
@@ -507,7 +514,7 @@ aside{
 
 
 /* Part 5: Pied de page -----------------*/
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -518,7 +525,7 @@ footer{
     background-color: #F2F2F2;
 }
 
-footer div{
+footer div {
     display: flex;
     flex-direction: column;
     line-height: 25px;
@@ -527,13 +534,13 @@ footer div{
     margin-left: 45px;
     margin-right: 150px;
 }
-footer div a{
+footer div a {
     color: #181818;
     text-decoration: none;
     font-size: 16px;
 }
 
-.footer_row1{
+footer div strong {
     font-family: 'Raleway_bold';
     font-weight: bolder;
 }
@@ -543,96 +550,85 @@ footer div a{
 
 
 /* Spécification pour les écrans type tablette -------------------------------------*/
-@media (min-width:768px) and (max-width: 991px){
+@media (min-width:768px) and (max-width: 991px) {
 
     /* Section Recherche */
-    #filtres{
+    #filtres {
         width: 100%;
     }
 
     /* Section hébergements */
-    #hebergements_section{
-        display: flex;
+    #main_section {
         flex-direction: column;
         justify-content: center;
         width: 90%;
         margin: auto;
     }
 
-    #hebergements_article{
-        display: flex;
+    #hebergements_section {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         width: 100%;
         margin-bottom: 35px;
-        margin-right: 0px;
-        padding: 15px;
-        background-color: #F2F2F2;
-        border-radius: 20px;
     }
 
     /* Sidebar */
-    aside{
+    aside {
         width: 98%;
         padding: 25px;
-        background-color: #F2F2F2;
-        border-radius: 20px;
         margin-bottom: 25px;
         margin-left: 0px;
     }
-  
 
-    #aside_body{
+    #aside_body {
         display: flex;
-       justify-content: center;
-       padding-left: 30px;
+        justify-content: center;
+        padding-left: 30px;
     }
 
-    .sidebar_annonce{
-        display: flex;
+    .sidebar_annonce {
         flex-direction: column;
         justify-content: space-between;
         margin-right: 45px;
-        border-radius: 10px;
         height: 220px;
-        width: 160px;
+        width: 200px;
     }
-    .sidebar_image {
-        width: 160px;
+    .sidebar_image_container {
+        width: 100%;
         height: 160px;
         overflow: hidden;
-        border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
     }
    
     
-    #sidebar_image1,#sidebar_image3, #sidebar_image2{
+    #sidebar_image1, #sidebar_image2 {
         position: relative;
         width: 100%;
         height: auto;
         left: 0px;
+        top: -5px;
     }
-    #sidebar_image3{
-        top: -85px;
+    #sidebar_image3 {
+        top: -115px;
     }
 
     /* Section Activités */
-    #activites_article{
+    #activites_section {
         width: 100%;
     }
 
-    #activites_article h4{
+    #activites_section h4 {
         margin-left: 65px;
     }
-    #all_activites{
+    #all_activites {
         flex-wrap: wrap;
         width: 80%;
         margin: auto;
     }
 
-    .colonne{
+    .colonne {
         margin-bottom: 35px;
     }
 
@@ -643,62 +639,67 @@ footer div a{
 
 
 /* Spécification pour les petits écrans (smartphones) --------------------------------------*/
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    /* En-tête */
-    header{
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 90%;
+    /* En-tête */   
+    /* Menu de navigation */
+    nav {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    nav img {
+        left: 25px;
+    }
+    
+    #main_menu {
+        justify-content: center;
+        width: 100%;
         margin: auto;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        border-bottom: 3px #F2F2F2 solid;
     }
     
-    /* Menu */
-    nav ul{
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap-reverse;
+    #main_menu p {
+        margin: 0px;
+        margin-bottom: 15px;
+
+    }
+    
+    nav a {
+        padding-top: 0px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
+    #nav_inscrire {
+        margin-left: 0px;
+    }
+    
+    nav a:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
     }
 
-    
-    nav a{
-        font-size: 1.2em;
-        color: #181818;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        text-decoration: none;
-        border-bottom: 3px solid #F2F2F2;
-    }
-    
-    #nav_inscrire{
-        color: #0065FC;
-        font-weight: bolder;
-    
-    }
-    
-    nav a:hover{
-        color:#0065FC;
-        border-bottom: 3px solid #0065FC;
-        border-top: none;
-    }
+
 
     /* Section Recherche */
-    h1{
+    h1 {
         line-height: 25px;
     }
 
-    #button_part{
-        display: flex;
+    #button_part {
         flex-direction: row-reverse;
         position: relative;
         top: -2px;
         left: -10px;
     }
-    #search_button{
+    #desktop_search_button {
         visibility: hidden;
     }
-    #loop_button{
+    #smallscreen_search_button {
         visibility: visible;
         font-family: 'Raleway_bold';
         background-color: #0065FC;
@@ -710,180 +711,152 @@ footer div a{
         width: 52px;
     }
 
-    #filtres{
-        display: flex;
+    #filtres {
         flex-direction: column;
         justify-content: left;
         align-items: flex-start;
-        width: 70%;
+        width: 80%;
     }
 
-    #liste_filtres{
-        display: flex;
+    #liste_filtres {
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: baseline;
     }
 
-    .filtre_button{
+    .filtre_button {
         margin-bottom: 10px;
     }
 
     /* Section Hebergements */
-    #hebergements_section{
-        display: flex;
+    #main_section {
+        width: 100%;
         flex-direction: column-reverse;
         justify-content: center;
         justify-items: center;
     }
 
-    #hebergements_article{
-        width: 100%;
+    #hebergements_section {
+        width: 90%;
         margin: auto;
         justify-items: center;
         background-color: white;
         border-radius: 0px;
-        display: flex;
         margin-right: 0px;
     }
-    
-    #all_hebergements{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 25px;
-        
+
+    #hebergements_section h2 {
+        margin-left: 15px;
     }
     
-    .hebergement_annonce{
-        display: flex;
+    #all_hebergements {
         flex-direction: column;
-        justify-content: flex-start;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+    
+    .hebergement_annonce {
         width: 345px;
         margin-bottom: 25px;
         border-radius: 15px;
         box-shadow: 6px 6px 4px #F2F2F2;
-        background-color: white;
-        padding: 5px;
-        padding-right: 0px;
     }
     
-    .hebergement_image {
-        width: 100%;
+    .hebergement_image_container {
         height: 150px;
-        overflow: hidden;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
     }
     
-    #image_row1_1,#image_row1_2, #image_row1_3{
+    #image_row1_1,#image_row1_2, #image_row1_3 {
         top: -60px;
     }
-    #image_row2_1{
+    #image_row2_1 {
         top: -120px;
     }
-    #image_row2_2{
+    #image_row2_2 {
         top: -40px;
     }
-    #image_row2_3{
+    #image_row2_3 {
         top: -230px;
     }
 
-    /* Colonne latérale */
-    aside{
-        width: 100%;
+    /* Sidebar */
+    aside {
+        width: 90%;
+        margin: auto;
         border-radius: 0px;
         margin-bottom: 25px;
         padding: 20px;
-        margin-left: 0px;
     }
-    .sidebar_annonce{
+    .sidebar_annonce {
+        margin: auto;
+        margin-bottom: 30px;
         width: 345px;
+        box-shadow: 4px 4px 0px #F2F2F2;
     }
 
 
     /* Section Activité */
-    #activites_article{
-        width: 100%;
-        margin-left: 50px;
+    #activites_section {
+        width: 90%;
+        margin-left: 60px;
     }
 
-    #all_activites{
-        display: flex;
+    #all_activites {
         flex-direction: column;
-        justify-content: center;
     }
     
-    .colonne{
+    .colonne {
         max-width: 345px;
-        margin-bottom: 0px;
-    }
-    .activite_link{
-        text-decoration: none;
-        color: #181818;
     }
 
-    .activite_annonce, #activite_annonce2, #activite_annonce5{
-        display: flex;
-        flex-direction: column;
-        border-radius: 15px;
-        box-shadow: 6px 6px 6px #F2F2F2;
-        background-color: white;
+    .activite_annonce, #activite_annonce2, #activite_annonce5 {
         margin-bottom: 25px;
     }
     
-
-    .image_container{
-        width: 100%;
-        overflow: hidden;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
+    .image_container {
+        width: 345px;
     }
-    #image_container1, #image_container2, #image_container3, #image_container4, #image_container5, #image_container6{
+
+    #image_container1, #image_container2, #image_container3, #image_container4, #image_container5, #image_container6 {
         height: 130px;
     }
 
-    #activite_image1, #activite_image2, #activite_image3, #activite_image4, #activite_image5, #activite_image6{
+    #activite_image1, #activite_image2, #activite_image3, #activite_image4, #activite_image5, #activite_image6 {
         position: relative;
         width: 100%;
         height: auto;
     } 
 
-    #activite_image1{
+    #activite_image1 {
         left: 0px;
         top: -40px;
     }
-    #activite_image2{
+    #activite_image2 {
         top: -200px;
     }
-    #activite_image6{
+    #activite_image6 {
         bottom: -50px;  
     }
-    #activite_image4{
+    #activite_image4 {
         left: 0px;
         bottom: 55px;
     }
-    #activite_image5{
+    #activite_image5 {
         top: -20px;
     }
-    #activite_image6{
+    #activite_image6 {
         top: -50px; 
     }
 
 
     /* Footer */
-    footer{
-        display: flex;
+    footer {
         flex-direction: column;
         justify-content: space-between;
         width: 100%;
         padding-left: 25px;
         padding-top: 45px;
     }
-    footer div{
-        display: flex;
-        flex-direction: column;
+    footer div {
         justify-items: flex-start;
-        line-height: 25px;
         margin-top: 0px;
         margin-bottom: 30px;
     }
