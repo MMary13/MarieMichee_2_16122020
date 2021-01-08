@@ -481,7 +481,7 @@ aside {
     border-top-right-radius: 15px;
 }
 
-#image_container1, #image_container4 {
+#image_container1{
     height: 390px;
 }
 
@@ -491,14 +491,22 @@ aside {
 
 #image_container3 {
     height: 115px;
+    
+}
+
+#image_container4 {
+    height: 390px;
+    filter: brightness(130%) contrast(85%) saturate(110%);
 }
 
 #image_container5 {
     height: 140px;
+    filter: brightness(105%) contrast(90%);
 }
 
 #image_container6 {
     height: 155px;
+    filter: brightness(110%) contrast(90%);
 }
 
 #activite_image1, #activite_image4 {
@@ -506,6 +514,7 @@ aside {
     height: 100%;
     width: auto;
     left: -150px;
+    
 }
 
 #activite_image2, #activite_image3, #activite_image5, #activite_image6 {
