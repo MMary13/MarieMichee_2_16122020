@@ -148,8 +148,9 @@ h1 p {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0px;
-    height: 52px;
+    height: 53px;
 }
+
 #smallscreen_search_button {
     visibility: hidden;
 }
@@ -204,6 +205,7 @@ h1 p {
     width: 40px;
     border-radius: 75px;
 }
+
 .filtre_text {
     font-family: 'Raleway_bold';
     font-size: 15px;
@@ -230,6 +232,7 @@ h1 p {
     border: 3px #F2F2F2 solid;
 
 }
+
 #text_info {
     font-size: 14px;
 }
@@ -314,6 +317,7 @@ h1 p {
 #image_row2_1 {
     top: -40px;
 }
+
 #image_row2_3 {
     top: -100px;
 }
@@ -324,6 +328,7 @@ h1 p {
     padding-top: 10px;
     font-size: 16px
 }
+
 .text_annonce strong {
     font-weight: bolder;
     font-family: 'Raleway_bold';
@@ -335,6 +340,7 @@ h1 p {
     font-weight: bolder;
     font-family: 'Raleway_bold';
 }
+
 #link_more {
     margin-bottom: 40px;
     margin-left: 15px;
@@ -343,6 +349,7 @@ h1 p {
 .blue_star {
     color: #0065FC;
 }
+
 .grey_star {
     color: #F2F2F2;
 }
@@ -453,6 +460,7 @@ aside {
     background-color: white;
 
 }
+
 #activite_annonce2, #activite_annonce5 {
     margin-bottom: 40px;
 }
@@ -476,15 +484,19 @@ aside {
 #image_container1, #image_container4 {
     height: 390px;
 }
+
 #image_container2 {
    height: 180px;
 }
+
 #image_container3 {
     height: 115px;
 }
+
 #image_container5 {
     height: 140px;
 }
+
 #image_container6 {
     height: 155px;
 }
@@ -505,6 +517,7 @@ aside {
 #activite_image2 {
     top: -90px;
 }
+
 #activite_image6 {
     bottom: 15px;  
 }
@@ -534,6 +547,7 @@ footer div {
     margin-left: 45px;
     margin-right: 150px;
 }
+
 footer div a {
     color: #181818;
     text-decoration: none;
@@ -594,6 +608,7 @@ footer div strong {
         height: 220px;
         width: 200px;
     }
+
     .sidebar_image_container {
         width: 100%;
         height: 160px;
@@ -610,6 +625,7 @@ footer div strong {
         left: 0px;
         top: -5px;
     }
+
     #sidebar_image3 {
         top: -115px;
     }
@@ -622,6 +638,7 @@ footer div strong {
     #activites_section h4 {
         margin-left: 65px;
     }
+
     #all_activites {
         flex-wrap: wrap;
         width: 80%;
@@ -693,12 +710,13 @@ footer div strong {
     #button_part {
         flex-direction: row-reverse;
         position: relative;
-        top: -2px;
         left: -10px;
     }
+
     #desktop_search_button {
         visibility: hidden;
     }
+    
     #smallscreen_search_button {
         visibility: visible;
         font-family: 'Raleway_bold';
@@ -767,12 +785,15 @@ footer div strong {
     #image_row1_1,#image_row1_2, #image_row1_3 {
         top: -60px;
     }
+
     #image_row2_1 {
         top: -120px;
     }
+
     #image_row2_2 {
         top: -40px;
     }
+
     #image_row2_3 {
         top: -230px;
     }
@@ -785,6 +806,7 @@ footer div strong {
         margin-bottom: 25px;
         padding: 20px;
     }
+
     .sidebar_annonce {
         margin: auto;
         margin-bottom: 30px;
@@ -829,19 +851,24 @@ footer div strong {
         left: 0px;
         top: -40px;
     }
+
     #activite_image2 {
         top: -200px;
     }
+
     #activite_image6 {
         bottom: -50px;  
     }
+
     #activite_image4 {
         left: 0px;
         bottom: 55px;
     }
+
     #activite_image5 {
         top: -20px;
     }
+
     #activite_image6 {
         top: -50px; 
     }
@@ -855,6 +882,7 @@ footer div strong {
         padding-left: 25px;
         padding-top: 45px;
     }
+
     footer div {
         justify-items: flex-start;
         margin-top: 0px;
