@@ -1,9 +1,8 @@
   <!doctype html>
-    <html>
+    <html lang="fr">
       <head>
         <meta charset="UTF-8"/>
         <link rel="stylesheet" href="style.css"/>
-        <!-- Font Awesome kit's code -->
         <script src="https://kit.fontawesome.com/ae53c87fa4.js" crossorigin="anonymous"></script>
        <title>Reservia</title>
       </head>
@@ -12,17 +11,17 @@
         <div id="bloc_page">
         <!-- Part 1: En-tête -->
           <header>
-            <img src="images/Reservia.svg" alt="Logo Reservia">
-
             <!--Navigation menu-->
             <nav>
-              <ul>
-                <li><a href="#hebergements"> Hébergements</a></li>
-                <li><a href="#activites"> Activités</a></li>
-                <li><a href="#" id="nav_inscrire"> S'inscrire</a></li>
-              </ul>
+              <img src="images/Reservia.svg" alt="Logo Reservia">
+              <div id="main_menu">
+                <p><a href="#hebergements">Hébergements</a></p>
+                <p><a href="#activites">Activités</a></p>
+              </div>
+              <p><a href="#" id="nav_inscrire"> S'inscrire</a></p>
             </nav>
           </header>
+
 
           <!-- Part 2: Section Recherche -->
           <section id="search_section">
@@ -33,48 +32,55 @@
 
             <form action="#">
               <div id="search_bar">
-                <span id="icon_mapmarker"><i class="fas fa-map-marker-alt"></i></span>
-                <input type="search" name="input_search" id="input_search" value="Marseille,France" style="border:0px">
-                <input type="button" value="Rechercher" id="search_button">
+                <div id="input_part">
+                  <span id="icon_mapmarker"><i class="fas fa-map-marker-alt"></i></span>
+                  <input type="search" name="input_search" id="input_search" value="Marseille,France" style="border:0px">
+                </div>
+                <div id="button_part">
+                  <button id="desktop_search_button">Rechercher</button>
+                  <button id="smallscreen_search_button"><span id="loop_icon"><i class="fas fa-search"></i></span></button>
+                </div>
               </div>
 
               <div id="filtres">
                 <p>Filtres</p>
-                <div class="filtre_button">
-                  <div class="filtre_logo"><i class="fas fa-money-bill-wave"></i></div>
-                  <div class="filtre_text">Economique</div>
-                </div>
-                
-                <div class="filtre_button">
-                  <div class="filtre_logo"><i class="fas fa-child"></i></div>
-                  <div class="filtre_text">Familial</div>
-                </div>
-
-                <div class="filtre_button">
-                  <div class="filtre_logo"><i class="fas fa-heart"></i></div>
-                  <div class="filtre_text">Romantique</div>
-                </div>
-
-                <div class="filtre_button">
-                  <div class="filtre_logo"><i class="fas fa-dog"></i></div>
-                  <div class="filtre_text">Animaux autorisés</div>
-
+                <div id="liste_filtres">
+                  <div class="filtre_button">
+                    <div class="filtre_logo"><i class="fas fa-money-bill-wave"></i></div>
+                    <div class="filtre_text">Economique</div>
+                  </div>
+                  
+                  <div class="filtre_button">
+                    <div class="filtre_logo"><i class="fas fa-child"></i></div>
+                    <div class="filtre_text">Familial</div>
+                  </div>
+  
+                  <div class="filtre_button">
+                    <div class="filtre_logo"><i class="fas fa-heart"></i></div>
+                    <div class="filtre_text">Romantique</div>
+                  </div>
+  
+                  <div class="filtre_button">
+                    <div class="filtre_logo"><i class="fas fa-dog"></i></div>
+                    <div class="filtre_text">Animaux autorisés</div>
+                  </div>
                 </div>
               </div>
             </form>
 
-            <p><span id="icon_info"><i class="fas fa-info-circle"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p id="text_info"><span id="icon_info"><i class="fas fa-info"></i></span> Plus de 500 logements sont disponibles dans cette ville</p>
           </section>
 
-          <!-- Part 3: Section Hébergements -->
-          <section id="hebergements_section">
-            <!-- Article Hébergements-->
-            <article >
+
+          <!-- Part 3: Section Hébergements and Sidebar-->
+          <div id="main_section">
+            <!-- Section Hébergements -->
+            <section id="hebergements_section">
               <h2>Hébergements à Marseille</h2>
-              
-              <div class="row_article">
+              <div id="all_hebergements">
+                <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row1_1" src="images/hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
                   </div>
                   <div class="text_annonce">
@@ -90,9 +96,11 @@
                       </div>
                   </div>
                 </div>
+                </a>
 
+                <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row1_2" src="images/hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>
                   </div>
                   <div class="text_annonce">
@@ -108,9 +116,11 @@
                     </div>
                   </div>
                 </div>
+                </a>
 
+                <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row1_3" src="images/hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"/>
                   </div>
                   <div class="text_annonce">
@@ -126,11 +136,11 @@
                     </div>
                   </div>
                 </div>
+                </a>
 
-              </div>
-              <div class="row_article">
+                <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row2_1" src="images/hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
                   </div>
                   <div class="text_annonce">
@@ -146,9 +156,11 @@
                     </div>
                   </div>
                 </div>
+                </a>
 
+                <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row2_2" src="images/hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le Panier"/>
                   </div>
                   <div class="text_annonce">
@@ -164,9 +176,11 @@
                     </div>
                   </div>
                 </div>
+                </a>
 
+                <a href="#" class="hebergement_link">
                 <div class="hebergement_annonce">
-                  <div class="hebergement_image">
+                  <div class="hebergement_image_container">
                     <img id="image_row2_3" src="images/hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
                   </div>
                   <div class="text_annonce">
@@ -182,9 +196,10 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div><a href="#"> Afficher plus</a></div>
-            </article>
+                </a>
+            </div>
+              <div id="link_more"><a href="#" > Afficher plus</a></div>
+          </section>
 
             <!-- Sidebar: Les plus populaires-->
             <aside>
@@ -193,8 +208,9 @@
                 <span id="graph_icon"><i class="fas fa-chart-line"></i></span>
               </div>
               <div id="aside_body">
+                <a href="#" class="sidebar_annonce_link">
                 <div class="sidebar_annonce">
-                  <div class="sidebar_image">
+                  <div class="sidebar_image_container">
                     <img id="sidebar_image1" src="images/hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                   </div>
                   <div class="sidebar_text_annonce">
@@ -208,12 +224,13 @@
                         <span class="blue_star"><i class="fas fa-star"></i></span>
                         <span class="blue_star"><i class="fas fa-star"></i></span>
                       </div>
-                      
                   </div>
                 </div>
+                </a>
 
+                <a href="#" class="sidebar_annonce_link">
                 <div class="sidebar_annonce">
-                  <div class="sidebar_image">
+                  <div class="sidebar_image_container">
                     <img id="sidebar_image2" src="images/hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
                   </div>
                   <div class="sidebar_text_annonce">
@@ -227,12 +244,13 @@
                         <span class="blue_star"><i class="fas fa-star"></i></span>
                         <span class="grey_star"><i class="fas fa-star"></i></span>
                       </div>
-                      
                   </div>
                 </div>
+                </a>
 
+                <a href="#" class="sidebar_annonce_link">
                 <div class="sidebar_annonce">
-                  <div class="sidebar_image">
+                  <div class="sidebar_image_container">
                     <img id="sidebar_image3" src="images/hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et Blanc"/>
                   </div>
                   <div class="sidebar_text_annonce">
@@ -248,88 +266,103 @@
                   </div>
                 </div>
               </div>
+              </a>
               </div>
           </aside>
-          </section>
+        </div>
+
 
           <!-- Part 4: Section Activités -->
           <section id="activites_section">
             <h4>Activités à Marseille</h4>
 
-            <article id="activites_article">
+            <div id="all_activites">
               <!-- Colonne 1-->
               <div class="colonne">
+                <a href="#" class="activite_link">
                 <div class="activite_annonce">
                   <div class="image_container" id="image_container1">
                     <img id="activite_image1" src="images/activities/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
                   </div>
                   <p>Vieux Port</p>
                 </div>
+                </a>
               </div>
 
               <!-- Colonne 2-->
               <div class="colonne">
+                <a href="#" class="activite_link">
                 <div class="activite_annonce" id="activite_annonce2">
                   <div class="image_container" id="image_container2">
                     <img id="activite_image2" src="images/activities/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
                   </div>
                   <p>Fort de Pomègues</p>
                 </div>
+                </a>
                 
+                <a href="#" class="activite_link">
                 <div class="activite_annonce">
                   <div class="image_container" id="image_container3">
                     <img id="activite_image3" src="images/activities/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                   </div>
                   <p>Îles du Frioul</p>
                 </div>
+                </a>
               </div>
 
               <!-- colonne 3-->
               <div class="colonne">
+                <a href="#" class="activite_link">
                 <div class="activite_annonce">
                   <div class="image_container" id="image_container4">
                     <img id="activite_image4" src="images/activities/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
                   </div>
                   <p>Parc National des Calanques</p>
                 </div>
+                </a>
               </div>
 
               <!-- Colonne 4 -->
               <div class="colonne">
+                <a href="#" class="activite_link">
                 <div class="activite_annonce" id="activite_annonce5">
                   <div class="image_container" id="image_container5">
                     <img id="activite_image5" src="images/activities/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
                   </div>
                   <p>Notre-Dame-de-la-Garde</p>
                 </div>
+                </a>
                 
+                <a href="#" class="activite_link">
                 <div class="activite_annonce">
                   <div class="image_container" id="image_container6">
                     <img id="activite_image6" src="images/activities/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
                   </div>
                   <p>Parc Longchamp</p>
                 </div>
+                </a>
               </div>
-            </article>
+            </div>
           </section>
 
+          
           <!-- Part 5: Pied de page-->
           <footer>
             <div>
-              <a href="#" class="footer_row1"><strong>A propos</strong></a><br>
+              <a href="#"><strong>A propos</strong></a><br>
               <a href="#">Fonctionnement du site</a>
               <a href="#">Conditions générales de vente</a>
               <a href="#">Données et confidentialité</a>
             </div>
 
             <div>
-              <a href="#" class="footer_row1"><strong>Nos hébergements</strong></a><br>
+              <a href="#"><strong>Nos hébergements</strong></a><br>
               <a href="#">Charte qualité</a>
               <a href="#">Soumettre votre hôtel</a>
             </div>
 
             <div>
-              <a href="#" class="footer_row1"><strong>Assistance</strong></a><br>
+              <a href="#"><strong>Assistance</strong></a><br>
               <a href="#">Centre d'aide</a>
               <a href="#">Nous contacter</a>
             </div>
