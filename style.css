@@ -667,9 +667,18 @@ footer div strong {
 /* Spécification pour les petits écrans (smartphones) --------------------------------------*/
 @media (max-width: 768px) {
 
+    #bloc_page {
+        margin: 0px 0px 0px 0px;
+    }
+
     /* En-tête */   
     /* Menu de navigation */
+    header {
+        margin: 0px 0px 0px 0px;
+    }
+
     nav {
+        margin: 0px 0px 0px 15px;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
@@ -681,9 +690,7 @@ footer div strong {
     #main_menu {
         justify-content: center;
         width: 100%;
-        margin: auto;
-        margin-top: 20px;
-        margin-bottom: 25px;
+        margin: 20px 0px 25px 0px;
         border-bottom: 3px #F2F2F2 solid;
     }
     
@@ -712,6 +719,11 @@ footer div strong {
 
 
     /* Section Recherche */
+    #search_section {
+        width: 95%;
+        margin: 10px 0px 30px 20px;
+    }
+
     h1 {
         line-height: 25px;
     }
@@ -756,18 +768,17 @@ footer div strong {
     /* Section Hebergements */
     #main_section {
         width: 100%;
-        flex-direction: column-reverse;
+        margin: 0px 0px 25px 0px;
         justify-content: center;
-        justify-items: center;
+        flex-direction: column-reverse;
     }
 
     #hebergements_section {
-        width: 90%;
-        margin: auto;
+        width: 92%;
+        margin: 20px 0px 0px 0px;
         justify-items: center;
         background-color: white;
         border-radius: 0px;
-        margin-right: 0px;
     }
 
     #hebergements_section h2 {
@@ -777,7 +788,6 @@ footer div strong {
     #all_hebergements {
         flex-direction: column;
         margin: auto;
-        margin-bottom: 25px;
     }
     
     .hebergement_annonce {
@@ -810,9 +820,8 @@ footer div strong {
     /* Sidebar */
     aside {
         width: 90%;
-        margin: auto;
+        margin: 0px 0px 0px 0px;
         border-radius: 0px;
-        margin-bottom: 25px;
         padding: 20px;
     }
 
@@ -826,12 +835,17 @@ footer div strong {
 
     /* Section Activité */
     #activites_section {
-        width: 90%;
-        margin-left: 60px;
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+
+    #activites_section h4{
+        margin-left: 30px;
     }
 
     #all_activites {
         flex-direction: column;
+        align-items: center;
     }
     
     .colonne {
@@ -887,7 +901,8 @@ footer div strong {
     footer {
         flex-direction: column;
         justify-content: space-between;
-        width: 100%;
+        width: 95%;
+        margin: 20px 0px 0px 0px;
         padding-left: 25px;
         padding-top: 45px;
     }
