@@ -253,7 +253,7 @@ h1 p {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 15px;
+    padding: 20px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 20px;
@@ -263,7 +263,7 @@ h1 p {
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 21px;
-    padding-left: 25px;
+    padding-left: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -273,9 +273,6 @@ h1 p {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
-    
 }
 
 .hebergement_link {
@@ -287,9 +284,10 @@ h1 p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 210px;
+    width: 200px;
     height: 190px;
     margin-bottom: 35px;
+    margin-right: 5%;
     border-radius: 10px;
     box-shadow: 6px 6px 3px #f2f2f2;
     background-color: white;
@@ -545,6 +543,7 @@ footer {
     margin: auto;
     margin-top: 30px;
     background-color: #F2F2F2;
+    padding: 10px;
 }
 
 footer div {
@@ -599,7 +598,7 @@ footer div strong {
     /* Sidebar */
     aside {
         width: 98%;
-        padding: 25px;
+        padding: 30px;
         margin-bottom: 25px;
         margin-left: 0px;
     }
@@ -607,7 +606,7 @@ footer div strong {
     #aside_body {
         display: flex;
         justify-content: center;
-        padding-left: 30px;
+        margin-left: 35px;
     }
 
     .sidebar_annonce {
@@ -782,7 +781,7 @@ footer div strong {
     }
 
     #hebergements_section h2 {
-        margin-left: 15px;
+        margin-left: 25px;
     }
     
     #all_hebergements {
@@ -825,6 +824,10 @@ footer div strong {
         padding: 20px;
     }
 
+    #aside_header {
+        margin-left: 25px;
+    }
+
     .sidebar_annonce {
         margin: auto;
         margin-bottom: 30px;
@@ -840,7 +843,7 @@ footer div strong {
     }
 
     #activites_section h4{
-        margin-left: 30px;
+        margin-left: 50px;
     }
 
     #all_activites {
