@@ -906,8 +906,7 @@ footer div strong {
         justify-content: space-between;
         width: 95%;
         margin: 20px 0px 0px 0px;
-        padding-left: 25px;
-        padding-top: 45px;
+        padding: 45px 0px 5px 25px;
     }
 
     footer div {
