@@ -40,7 +40,7 @@ nav {
 
 nav img {
     position: absolute;
-    left: 45px;
+    left: 4%;
 }
 
 #main_menu {
@@ -256,7 +256,7 @@ h1 p {
     padding: 20px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-right: 5%;
 }
 
 #hebergements_section h2 {
@@ -270,9 +270,13 @@ h1 p {
 
 #all_hebergements {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     margin-bottom: 10px;
+}
+
+.row_hebergements{
+    display: flex;
+    justify-content: space-between;
 }
 
 .hebergement_link {
@@ -284,10 +288,9 @@ h1 p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 200px;
+    width: 210px;
     height: 190px;
     margin-bottom: 35px;
-    margin-right: 5%;
     border-radius: 10px;
     box-shadow: 6px 6px 3px #f2f2f2;
     background-color: white;
@@ -588,9 +591,6 @@ footer div strong {
     }
 
     #hebergements_section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
         width: 100%;
         margin-bottom: 35px;
     }
@@ -786,6 +786,11 @@ footer div strong {
     
     #all_hebergements {
         flex-direction: column;
+    }
+
+    .row_hebergements {
+        flex-direction: column;
+        justify-content: center;
         margin: auto;
     }
     
@@ -814,6 +819,10 @@ footer div strong {
 
     #image_row2_3 {
         top: -230px;
+    }
+
+    #link_more {
+        margin-left: 35px;
     }
 
     /* Sidebar */
