@@ -28,6 +28,7 @@
 header {
     width: 93%;
     margin: auto;
+    margin-bottom: 25px;
 }
 
 /* Menu */
@@ -95,13 +96,14 @@ h1 p {
 #search_section {
     width: 93%;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 #search_bar {
     display: flex;
     align-items: baseline;
     border-collapse: collapse;
+    margin: 35px 0px 20px 0px;
 }
 
 #input_part {
@@ -116,6 +118,7 @@ h1 p {
     border-left: none;
     border-right: none;
     margin-bottom: 15px;
+    padding-right: 5px;
 }
 
 #button_part {
@@ -158,18 +161,19 @@ h1 p {
 #input_search {
     padding-left: 10px;
     font-weight: bolder;
+    border: none;
 }
 
 
 #filtres {
     display: flex;
     align-items: baseline;
-    width: 70%;
+    width: 80%;
 }
 
 #liste_filtres {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
 }
 
@@ -177,19 +181,18 @@ h1 p {
     font-family: 'Raleway_bold';
     font-size: 17px;
     font-weight: bolder;
-    margin-right: 25px;
+
 }
 
 .filtre_button {
     display: flex;
     align-items: center;
     font-weight: bolder;
-    min-width: 150px;
-    max-width: 240px;
+    max-width: 200px;
     height: 40px;
     border: 2px #F2F2F2 solid;
     border-radius: 20px;
-    margin-right: 20px;
+    margin-left: 10%;
     border-left: none;
 }
 
@@ -211,7 +214,8 @@ h1 p {
     font-size: 15px;
     font-weight: bolder;
     text-align: justify;
-    padding-right: 6px;
+    width: max-content;
+    padding-right: 10px;
     padding-left: 3px;
 }
 
@@ -253,7 +257,7 @@ h1 p {
     display: flex;
     flex-direction: column;
     width: 70%;
-    padding: 20px;
+    padding: 20px 0px 20px 0px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-right: 5%;
@@ -263,7 +267,7 @@ h1 p {
     font-family: 'Raleway_bold';
     font-weight: bolder;
     font-size: 21px;
-    padding-left: 10px;
+    padding-left: 5%;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -276,7 +280,7 @@ h1 p {
 
 .row_hebergements{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .hebergement_link {
@@ -288,9 +292,12 @@ h1 p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 210px;
-    height: 190px;
+    min-width: 200px;
+    max-width: 280px;
+    height: 200px;
     margin-bottom: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 10px;
     box-shadow: 6px 6px 3px #f2f2f2;
     background-color: white;
@@ -309,18 +316,19 @@ h1 p {
     position: relative;
     width: 100%;
     height: auto;
+    
 }
 
 #image_row1_1,#image_row1_2, #image_row1_3 {
-    top: -10px;
+    top: -15px;
  }
 
 #image_row2_1 {
-    top: -40px;
+    top: -45px;
 }
 
 #image_row2_3 {
-    top: -100px;
+    top: -120px;
 }
 
 .text_annonce {
@@ -344,7 +352,7 @@ h1 p {
 
 #link_more {
     margin-bottom: 40px;
-    margin-left: 15px;
+    margin-left: 5%;
 }
 
 .blue_star {
@@ -357,7 +365,6 @@ h1 p {
 
 aside {
     width: 30%;
-    margin-left: 10px;
     padding: 30px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -445,7 +452,7 @@ aside {
 
 #all_activites {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .activite_link {
@@ -463,7 +470,7 @@ aside {
 }
 
 #activite_annonce2, #activite_annonce5 {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
 }
 
 .activite_annonce p {
@@ -758,9 +765,12 @@ footer div strong {
 
     #liste_filtres {
         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     .filtre_button {
+        margin-left: 0px;
         margin-bottom: 10px;
     }
 
@@ -795,7 +805,8 @@ footer div strong {
     }
     
     .hebergement_annonce {
-        width: 345px;
+        min-width: 345px;
+        max-width: 345px;
         margin-bottom: 25px;
         border-radius: 15px;
         box-shadow: 6px 6px 4px #F2F2F2;
