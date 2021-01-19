@@ -141,15 +141,15 @@ h1 p {
 
 #desktop_search_button {
     font-family: 'Raleway_bold';
-    font-size: 14px;
+    font-size: 16px;
     background-color: #0065FC;
     border-color: #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: #FFFFFF;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0px;
     height: 53px;
 }
@@ -159,7 +159,8 @@ h1 p {
 }
 
 #input_search {
-    padding-left: 10px;
+    font-size: 16px;
+    padding-left: 30px;
     font-weight: bolder;
     border: none;
 }
@@ -751,7 +752,11 @@ footer div strong {
     h1 {
         line-height: 25px;
     }
-
+    
+    #icon_mapmarker {
+        width: 60px;
+    }
+    
     #button_part {
         flex-direction: row-reverse;
         position: relative;
@@ -770,7 +775,7 @@ footer div strong {
         border-radius: 15px;
         color: #FFFFFF;
         padding: 5px;
-        height: 52px;
+        height: 53px;
         width: 52px;
     }
 
