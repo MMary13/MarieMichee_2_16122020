@@ -177,6 +177,15 @@ h1 p {
     align-items: baseline;
 }
 
+.double_filtres {
+    display: flex;
+    margin-right: 10%;
+}
+
+.double_filtres .filtre_button {
+    margin-right: 7%;
+}
+
 #filtres p {
     font-family: 'Raleway_bold';
     font-size: 17px;
@@ -767,15 +776,13 @@ footer div strong {
 
     #filtres {
         flex-direction: column;
-        justify-content: left;
         align-items: flex-start;
-        width: 80%;
+        width: 100%;
     }
 
     #liste_filtres {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 0px;
     }
 
     .filtre_button {
