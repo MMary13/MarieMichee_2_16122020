@@ -15,7 +15,7 @@
 
 
 /* Mise en page générale-----------------*/
-#bloc_page {
+#bloc_page, body {
     font-family: Raleway_regular, sans-serif;
     width: 100%;
     margin: auto;
@@ -141,15 +141,15 @@ h1 p {
 
 #desktop_search_button {
     font-family: 'Raleway_bold';
-    font-size: 14px;
+    font-size: 16px;
     background-color: #0065FC;
     border-color: #0065FC;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     color: #FFFFFF;
     padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin: 0px;
     height: 53px;
 }
@@ -159,7 +159,8 @@ h1 p {
 }
 
 #input_search {
-    padding-left: 10px;
+    font-size: 16px;
+    padding-left: 30px;
     font-weight: bolder;
     border: none;
 }
@@ -175,6 +176,15 @@ h1 p {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+}
+
+.double_filtres {
+    display: flex;
+    margin-right: 10%;
+}
+
+.double_filtres .filtre_button {
+    margin-right: 7%;
 }
 
 #filtres p {
@@ -239,6 +249,7 @@ h1 p {
 
 #text_info {
     font-size: 14px;
+    line-height: 35px;
 }
 
 /*---------------------------------------*/
@@ -268,7 +279,7 @@ h1 p {
     font-weight: bolder;
     font-size: 21px;
     padding-left: 5%;
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -292,7 +303,7 @@ h1 p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    min-width: 200px;
+    min-width: 180px;
     max-width: 280px;
     height: 200px;
     margin-bottom: 35px;
@@ -352,7 +363,7 @@ h1 p {
 
 #link_more {
     margin-bottom: 40px;
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 .blue_star {
@@ -364,8 +375,8 @@ h1 p {
 }
 
 aside {
-    width: 30%;
-    padding: 30px;
+    width: 33%;
+    padding: 1%;
     background-color: #F2F2F2;
     border-radius: 20px;
 }
@@ -402,6 +413,8 @@ aside {
     display: flex;
     flex-direction: column;
     text-align: justify;
+    position: relative;
+    top: -10px;
     font-size: 15px;
     padding-left: 10px;
 }
@@ -456,10 +469,8 @@ aside {
 }
 
 .colonne {
-    min-width: 275px;
+    min-width: 245px;
     max-width: 400px;
-    padding-left: 1%;
-    padding-right: 1%;
 }
 
 .activite_link {
@@ -555,22 +566,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 95%;
-    height: fit-content;
+    width: 100%;
     margin: auto;
     margin-top: 30px;
     background-color: #F2F2F2;
-    padding: 10px;
 }
 
 footer div {
     display: flex;
     flex-direction: column;
-    line-height: 25px;
-    margin-top: 45px;
-    margin-bottom: 35px;
-    margin-left: 45px;
-    margin-right: 150px;
+    line-height: 35px;
+    padding: 30px;
 }
 
 footer div a {
@@ -579,9 +585,11 @@ footer div a {
     font-size: 16px;
 }
 
-footer div strong {
+footer div span {
     font-family: 'Raleway_bold';
-    font-weight: bolder;
+    font-weight: bold;
+    display:inline-block;
+    margin-bottom: 30px;
 }
 /*---------------------------------------*/
 
@@ -589,46 +597,50 @@ footer div strong {
 
 
 /* Spécification pour les écrans type tablette -------------------------------------*/
-@media (min-width:768px) and (max-width: 1181px) {
+@media (min-width:768px) and (max-width: 991px) {
 
     /* Section Recherche */
     #filtres {
         width: 100%;
+        flex-wrap: wrap;
     }
 
     /* Section hébergements */
     #main_section {
         flex-direction: column;
         justify-content: center;
-        width: 90%;
+        width: 100%;
         margin: auto;
+        margin-bottom: 25px;
     }
 
     #hebergements_section {
-        width: 100%;
+        width: 95%;
+        margin: auto;
         margin-bottom: 35px;
     }
 
     /* Sidebar */
     aside {
-        width: 98%;
-        padding: 30px;
-        margin-bottom: 25px;
-        margin-left: 0px;
+        width: 92%;
+        margin: auto;
     }
 
     #aside_body {
         display: flex;
-        justify-content: center;
-        margin-left: 35px;
+        justify-content: space-between;
+    }
+
+    #aside_header {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .sidebar_annonce {
         flex-direction: column;
-        justify-content: space-between;
-        margin-right: 45px;
-        height: 220px;
-        width: 200px;
+        height: 240px;
+        max-width: 250px;
+        min-width: 200px;
     }
 
     .sidebar_image_container {
@@ -668,8 +680,10 @@ footer div strong {
     }
 
     .colonne {
-        margin-left: 1%;
-        margin-right: 1%;
+        min-width: 275px;
+        max-width: 320px;
+        padding-left: 1%;
+        padding-right: 1%;
         margin-bottom: 35px;
     }
 
@@ -680,7 +694,7 @@ footer div strong {
 
 
 /* Spécification pour les petits écrans (smartphones) --------------------------------------*/
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     #bloc_page {
         margin: 0px 0px 0px 0px;
@@ -689,11 +703,12 @@ footer div strong {
     /* En-tête */   
     /* Menu de navigation */
     header {
-        margin: 0px 0px 0px 0px;
+        width: 98%;
+        margin: auto;
     }
 
     nav {
-        margin: 0px 0px 0px 15px;
+        margin: auto;
         flex-direction: column-reverse;
         align-items: flex-end;
     }
@@ -712,7 +727,6 @@ footer div strong {
     #main_menu p {
         margin: 0px;
         margin-bottom: 15px;
-
     }
     
     nav a {
@@ -735,14 +749,22 @@ footer div strong {
 
     /* Section Recherche */
     #search_section {
-        width: 95%;
-        margin: 10px 0px 30px 20px;
+        width: 98%;
+        margin: auto;
     }
 
     h1 {
         line-height: 25px;
     }
+    
+    #icon_mapmarker {
+        width: 60px;
+    }
 
+    #input_search {
+        padding-left: 25px;
+    }
+    
     #button_part {
         flex-direction: row-reverse;
         position: relative;
@@ -751,6 +773,8 @@ footer div strong {
 
     #desktop_search_button {
         visibility: hidden;
+        width: 0px;
+        padding: 0px;
     }
     
     #smallscreen_search_button {
@@ -761,21 +785,19 @@ footer div strong {
         border-radius: 15px;
         color: #FFFFFF;
         padding: 5px;
-        height: 52px;
+        height: 53px;
         width: 52px;
     }
 
     #filtres {
         flex-direction: column;
-        justify-content: left;
         align-items: flex-start;
-        width: 80%;
+        width: 100%;
     }
 
     #liste_filtres {
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-start;
+        flex-direction: column;
+        margin-right: 0px;
     }
 
     .filtre_button {
@@ -786,36 +808,36 @@ footer div strong {
     /* Section Hebergements */
     #main_section {
         width: 100%;
-        margin: 0px 0px 25px 0px;
         justify-content: center;
         flex-direction: column-reverse;
     }
 
     #hebergements_section {
-        width: 92%;
-        margin: 20px 0px 0px 0px;
+        width: 100%;
+        margin-right: 0px;
         justify-items: center;
         background-color: white;
         border-radius: 0px;
+        padding: 0px;
     }
 
     #hebergements_section h2 {
-        margin-left: 25px;
+        padding-left: 5%;
     }
     
     #all_hebergements {
         flex-direction: column;
+        justify-items: center;
     }
 
     .row_hebergements {
         flex-direction: column;
-        justify-content: center;
-        margin: auto;
+        justify-items: center;
     }
     
     .hebergement_annonce {
-        min-width: 345px;
         max-width: 345px;
+        margin: auto;
         margin-bottom: 25px;
         border-radius: 15px;
         box-shadow: 6px 6px 4px #F2F2F2;
@@ -847,32 +869,42 @@ footer div strong {
 
     /* Sidebar */
     aside {
-        width: 90%;
-        margin: 0px 0px 0px 0px;
+        width: 92%;
+        margin: auto;
         border-radius: 0px;
-        padding: 20px;
+        padding: 15px;
     }
 
     #aside_header {
-        margin-left: 25px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #aside_body {
+       width: 100%;
+       margin: auto;
     }
 
     .sidebar_annonce {
         margin: auto;
         margin-bottom: 30px;
-        width: 345px;
+        min-width: 90%;
         box-shadow: 4px 4px 0px #F2F2F2;
+    }
+
+    .sidebar_text_annonce {
+        padding-left: 15px;
     }
 
 
     /* Section Activité */
     #activites_section {
-        width: 100%;
-        margin: 20px 0px 20px 0px;
+        width: 93%;
+        margin: auto;
     }
 
     #activites_section h4{
-        margin-left: 50px;
+        padding-left: 5%;
     }
 
     #all_activites {
@@ -880,16 +912,12 @@ footer div strong {
         align-items: center;
     }
     
-    .colonne {
+    .colonne, .image_container  {
         max-width: 345px;
     }
 
     .activite_annonce, #activite_annonce2, #activite_annonce5 {
         margin-bottom: 25px;
-    }
-    
-    .image_container {
-        width: 345px;
     }
 
     #image_container1, #image_container2, #image_container3, #image_container4, #image_container5, #image_container6 {
@@ -932,16 +960,26 @@ footer div strong {
     /* Footer */
     footer {
         flex-direction: column;
-        justify-content: space-between;
-        width: 95%;
-        margin: 20px 0px 0px 0px;
-        padding: 45px 0px 5px 25px;
+        justify-content: flex-start;
+        justify-items: flex-start;
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+        padding: 30px 0px 10px 0px;
     }
 
     footer div {
         justify-items: flex-start;
-        margin-top: 0px;
-        margin-bottom: 30px;
+        margin: 0px 0px 30px 0px;
+        padding: 0px 0px 0px 35px;
+        width: 90%;
+    }
+
+    footer div a {
+        font-size: 14px;
+    }
+
+    footer div span {
+        margin-bottom: 10px;
     }
 }
 

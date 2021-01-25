@@ -2,6 +2,7 @@
     <html lang="fr">
       <head>
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="style.css"/>
         <link rel="shortcut icon" type="image/png" href="images/favicon.png">
         <script src="https://kit.fontawesome.com/ae53c87fa4.js" crossorigin="anonymous"></script>
@@ -34,26 +35,28 @@
             <form action="#">
               <div id="search_bar">
                 <div id="input_part">
-                  <span id="icon_mapmarker"><i class="fas fa-map-marker-alt"></i></span>
-                  <input type="search" name="input_search" id="input_search" value="Marseille,France">
+                  <span id="icon_mapmarker"><i class="fas fa-map-marker-alt fa-lg"></i></span>
+                  <input type="search" name="input_search" id="input_search" value="Marseille, France">
                 </div>
                 <div id="button_part">
                   <button id="desktop_search_button">Rechercher</button>
-                  <button id="smallscreen_search_button"><span id="loop_icon"><i class="fas fa-search"></i></span></button>
+                  <button id="smallscreen_search_button"><span><i class="fas fa-search fa-lg"></i></span></button>
                 </div>
               </div>
 
               <div id="filtres">
                 <p>Filtres</p>
                 <div id="liste_filtres">
-                  <div class="filtre_button">
-                    <div class="filtre_logo"><i class="fas fa-money-bill-wave"></i></div>
-                    <div class="filtre_text">Economique</div>
-                  </div>
-                  
-                  <div class="filtre_button">
-                    <div class="filtre_logo"><i class="fas fa-child"></i></div>
-                    <div class="filtre_text">Familial</div>
+                  <div class="double_filtres">
+                    <div class="filtre_button">
+                      <div class="filtre_logo"><i class="fas fa-money-bill-wave"></i></div>
+                      <div class="filtre_text">Economique</div>
+                    </div>
+                    
+                    <div class="filtre_button">
+                      <div class="filtre_logo"><i class="fas fa-child"></i></div>
+                      <div class="filtre_text">Familial</div>
+                    </div>
                   </div>
   
                   <div class="filtre_button">
@@ -87,7 +90,7 @@
                       </div>
                       <div class="text_annonce">
                         <span><strong>Auberge la Cannebière</strong><br>
-                            Nuit à partir de 25€
+                            Nuit à partir de 25<strong>€</strong> 
                         </span>
                           <div class="stars">
                             <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -107,7 +110,7 @@
                       </div>
                       <div class="text_annonce">
                         <span><strong>Hôtel du port</strong><br>
-                            Nuit à partir de 52€
+                            Nuit à partir de 52<strong>€</strong>
                         </span>
                         <div class="stars">
                           <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -127,7 +130,7 @@
                       </div>
                       <div class="text_annonce">
                         <span><strong>Hôtel Les mouettes</strong><br>
-                            Nuit à partir de 76€
+                            Nuit à partir de 76<strong>€</strong>
                         </span>
                         <div class="stars">
                           <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -149,7 +152,7 @@
                       </div>
                       <div class="text_annonce">
                         <span><strong>Hôtel de la mer</strong><br>
-                            Nuit à partir de 46€                      
+                            Nuit à partir de 46<strong>€</strong>                      
                         </span>
                         <div class="stars">
                           <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -169,7 +172,7 @@
                       </div>
                       <div class="text_annonce">
                         <span><strong>Auberge le Panier</strong><br>
-                            Nuit à partir de 23€
+                            Nuit à partir de 23<strong>€</strong>
                         </span>
                         <div class="stars">
                           <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -189,7 +192,7 @@
                       </div>
                       <div class="text_annonce">
                         <span><strong>Hôtel chez Amina</strong><br>
-                            Nuit à partir de 96€
+                            Nuit à partir de 96<strong>€</strong>
                         </span>
                         <div class="stars">
                           <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -220,7 +223,7 @@
                   </div>
                   <div class="sidebar_text_annonce">
                     <p><strong>Hôtel Le soleil du <br>matin</strong><br>
-                      Nuit à partir de 128€<br><br>
+                      Nuit à partir de 128<strong>€</strong><br><br>
                     </p>
                       <div class="stars">
                         <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -240,7 +243,7 @@
                   </div>
                   <div class="sidebar_text_annonce">
                     <p><strong>Au coeur de l'eau <br>Chambres d'hôtes</strong><br>
-                      Nuit à partir de 71€<br><br>
+                      Nuit à partir de 71<strong>€</strong><br><br>
                       </p>
                       <div class="stars">
                         <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -260,7 +263,7 @@
                   </div>
                   <div class="sidebar_text_annonce">
                   <p><strong>Hôtel Tout bleu et <br>blanc</strong><br>
-                  Nuit à partir de 68€<br><br>
+                  Nuit à partir de 68<strong>€</strong><br><br>
                   </p>
                   <div class="stars">
                     <span class="blue_star"><i class="fas fa-star"></i></span>
@@ -354,20 +357,20 @@
           <!-- Part 5: Pied de page-->
           <footer>
             <div>
-              <a href="#"><strong>A propos</strong></a><br>
+              <a href="#"><span>A propos</span></a>
               <a href="#">Fonctionnement du site</a>
               <a href="#">Conditions générales de vente</a>
               <a href="#">Données et confidentialité</a>
             </div>
 
             <div>
-              <a href="#"><strong>Nos hébergements</strong></a><br>
+              <a href="#"><span>Nos hébergements</span></a>
               <a href="#">Charte qualité</a>
               <a href="#">Soumettre votre hôtel</a>
             </div>
 
             <div>
-              <a href="#"><strong>Assistance</strong></a><br>
+              <a href="#"><span>Assistance</span></a>
               <a href="#">Centre d'aide</a>
               <a href="#">Nous contacter</a>
             </div>
