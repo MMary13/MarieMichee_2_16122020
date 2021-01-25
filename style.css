@@ -15,7 +15,7 @@
 
 
 /* Mise en page générale-----------------*/
-#bloc_page {
+#bloc_page, body {
     font-family: Raleway_regular, sans-serif;
     width: 100%;
     margin: auto;
@@ -566,21 +566,17 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 96%;
+    width: 100%;
     margin: auto;
     margin-top: 30px;
     background-color: #F2F2F2;
-    padding: 30px;
 }
 
 footer div {
     display: flex;
     flex-direction: column;
-    line-height: 25px;
-    /*margin-top: 45px;
-    margin-bottom: 35px;
-    margin-left: 45px;
-    margin-right: 150px;*/
+    line-height: 35px;
+    padding: 30px;
 }
 
 footer div a {
@@ -831,8 +827,7 @@ footer div span {
     
     #all_hebergements {
         flex-direction: column;
-        margin: 0px;
-
+        justify-items: center;
     }
 
     .row_hebergements {
@@ -841,9 +836,8 @@ footer div span {
     }
     
     .hebergement_annonce {
-        min-width: 95%;
-        margin-left: 0px;
-        margin-right: 0px;
+        max-width: 345px;
+        margin: auto;
         margin-bottom: 25px;
         border-radius: 15px;
         box-shadow: 6px 6px 4px #F2F2F2;
@@ -910,7 +904,7 @@ footer div span {
     }
 
     #activites_section h4{
-        padding-left: 10%;
+        padding-left: 5%;
     }
 
     #all_activites {
@@ -968,17 +962,16 @@ footer div span {
         flex-direction: column;
         justify-content: flex-start;
         justify-items: flex-start;
-        width: 93%;
-        margin: auto;
-        margin-top: 25px;
-        padding: 35px 0px 5px 25px;
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+        padding: 30px 0px 10px 0px;
     }
 
     footer div {
         justify-items: flex-start;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-bottom: 30px;
+        margin: 0px 0px 30px 0px;
+        padding: 0px 0px 0px 35px;
+        width: 90%;
     }
 
     footer div a {
