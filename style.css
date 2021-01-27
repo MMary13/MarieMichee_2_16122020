@@ -18,7 +18,7 @@
 #bloc_page, body {
     font-family: Raleway_regular, sans-serif;
     width: 100%;
-    margin: auto;
+    margin: 0px;
 }
 /*---------------------------------------*/
 
@@ -363,7 +363,7 @@ h1 p {
 
 #link_more {
     margin-bottom: 40px;
-    margin-left: 4%;
+    padding-left: 4%;
 }
 
 .blue_star {
@@ -471,6 +471,7 @@ aside {
 .colonne {
     min-width: 245px;
     max-width: 400px;
+    padding: 0px 10px 0px 10px;
 }
 
 .activite_link {
@@ -576,7 +577,7 @@ footer div {
     display: flex;
     flex-direction: column;
     line-height: 35px;
-    padding: 30px;
+    padding: 60px;
 }
 
 footer div a {
@@ -696,19 +697,16 @@ footer div span {
 /* Spécification pour les petits écrans (smartphones) --------------------------------------*/
 @media only screen and (max-width: 768px) {
 
-    #bloc_page {
-        margin: 0px 0px 0px 0px;
-    }
+    
 
     /* En-tête */   
     /* Menu de navigation */
     header {
-        width: 98%;
-        margin: auto;
+        width: 100%;
     }
 
     nav {
-        margin: auto;
+
         flex-direction: column-reverse;
         align-items: flex-end;
     }
@@ -749,8 +747,11 @@ footer div span {
 
     /* Section Recherche */
     #search_section {
-        width: 98%;
-        margin: auto;
+        width: 100%;
+    }
+
+    #main_title, form, #text_info {
+        padding-left: 20px;
     }
 
     h1 {
@@ -864,7 +865,7 @@ footer div span {
     }
 
     #link_more {
-        margin-left: 35px;
+        padding-left: 35px;
     }
 
     /* Sidebar */
@@ -882,7 +883,6 @@ footer div span {
 
     #aside_body {
        width: 100%;
-       margin: auto;
     }
 
     .sidebar_annonce {
@@ -899,8 +899,7 @@ footer div span {
 
     /* Section Activité */
     #activites_section {
-        width: 93%;
-        margin: auto;
+        width: 100%;
     }
 
     #activites_section h4{
