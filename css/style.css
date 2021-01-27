@@ -4,12 +4,12 @@
 /* Polices personnalisées---------------*/
 @font-face {
     font-family: 'Raleway_regular';
-    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Raleway_bold';
-    src: url('fonts/Raleway-Bold.ttf') format('truetype');
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
 }
 /*---------------------------------------*/
 
